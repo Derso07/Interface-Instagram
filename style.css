@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.fundo{
+    display: flex;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+.imagem-instagram{
+    display:flex;
+    width: 50%;
+    height: 100%;
+}
+
+.perfil{
+    width: 40%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.conta{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    background-color: #fff;
+    margin-top: 80px;
+    border: 1px solid #ccc;
+}
+.conta img:nth-child(1){
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.conta img:nth-child(2){
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.conta a:nth-child(3){
+    width: 60%;
+    background-color: #0095f6;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.conta a:nth-child(4){
+    text-align: center;
+    text-decoration: none;
+    margin:20px 0 40px 0;
+    color: #0095f6;
+}
+
+.alternar-conta{
+    height: inherit;
+    background-color: #fff;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.alternar-conta p, .alternar-conta span{
+    text-align: center;
+}
+
+.alternar-conta p{
+    color: #aaa;
+}
+
+.alternar-conta span{
+    color: #0095f6;
+}
+
+.donwload{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.donwload h2{
+    margin:20px 0 15px 0;
+    text-align: center;
+}
+
+.donwload .icones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.donwload .icones img{
+    width:150px;
+    margin: 0 15px 0 15px;
+}
+
+@media (max-width: 1024px) {
+
+    .imagem-instagram{
+        width: 60%;
+    }
+}
+
+@media (max-width: 650px) {
+    .imagem-instagram{
+        display: none;
+    }
+
+    .perfil{
+        margin: 0 auto;
+        width: 60%;
+    }
+}
